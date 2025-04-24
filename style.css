@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}
+.left,
+.right {
+  flex: 1;
+  padding: 2rem;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form_container {
+  max-width: 400px;
+  width: 100%;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: 900;
+  background-color: white;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5b21b6;
+  margin-bottom: 1rem;
+}
+
+.right_image img {
+  max-width: 100%;
+}
+
+.left_h1 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.desc {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: 100;
+  font-size: 14px;
+  color: gray;
+}
+
+.form_input {
+  width: 100%;
+  padding: 22px;
+  margin-top: 8px;
+  margin-bottom: 1.5rem;
+  border: none;
+  background-color: #f0f0ff;
+  border-radius: 7px;
+}
+
+.forgot {
+  float: right;
+  text-decoration: none;
+  color: #5b21b6;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox input {
+  margin-right: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 22px;
+  border: none;
+  background-color: #5b21b6;
+  margin-top: 1rem;
+  border-radius: 7px;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+button:hover {
+  background-color: #482384;
+  transition: 0.5s;
+}
+
+.signup {
+  text-align: center;
+  text-decoration: none;
+  color: #482384;
+  font-weight: bold;
+}
+
+.signup a {
+  text-decoration: none;
+  color: #482384;
+  font-weight: bold;
+}
+
+.right {
+  background-color: #482384;
+  color: white;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.right h1 {
+  font-size: 24px;
+  font-weight: 200;
+  margin-top: 1rem;
+}
+
+.right p {
+  margin-top: 2rem;
+}
